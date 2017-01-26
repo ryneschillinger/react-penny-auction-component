@@ -18,13 +18,13 @@ class BidItem extends Component {
     return (
       <div className="BidItem" onLoad={() => this.countdown()}>
       	<div className="BidItem-header">
-      		<h4>{this.props.item.name}</h4>
+      		<h4>{this.props.item.title}</h4>
       	</div>
       	<div className="BidItem-main">
-      		<img src={this.props.item.image} alt="product-thumb"/>
+      		<img src={this.props.item.img} alt="product-thumb"/>
       		<h2>00:00:{this.state.currentTime}</h2>
       		<h3>${(this.state.currentBid).toFixed(2)}</h3>
-      		<h4>username1234</h4>
+      		<h4>{this.props.item.username}</h4>
       		<button className="btn btn-bid" onClick={() => this.addBid()} id={this.props.item.name}>
       			Bid Now
       		</button>
