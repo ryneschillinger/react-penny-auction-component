@@ -1,0 +1,65 @@
+.BidItem {
+	width: 170px;
+	height: 350px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.BidItem-header {
+	border: 1px solid #BFBFBF;
+	border-radius: 8px 8px 0 0;
+	color: #007FDD;
+	height: 53px;
+	overflow: hidden;
+	background: -moz-linear-gradient(top, #ffffff 63%, #f1eff1 69%, #f4f2f4 76%, #ffffff 89%);
+	background: -webkit-linear-gradient(top, #ffffff 63%,#f1eff1 69%,#f4f2f4 76%,#ffffff 89%); 
+	background: linear-gradient(to bottom, #ffffff 63%,#f1eff1 69%,#f4f2f4 76%,#ffffff 89%); 
+}
+
+.BidItem-main {
+	padding: 10px;
+	border: 1px solid #BFBFBF;
+	border-top: 0;
+	border-radius: 0 0 8px 8px;
+	background-color: white;
+}
+
+.BidItem h4 {
+	padding: 0;
+	margin: 10px;
+}
+
+.BidItem-main h2 {
+	color: #DF0000;
+	padding: 0;
+	margin: 8px;
+}
+
+.BidItem-main h3 {
+	color: #4BA500;
+	padding: 0;
+	margin: 8px;
+}
+
+.BidItem-main h4 {
+	color: #666666;
+}
+
+
+@media all and (max-width: 820px) {
+  .BidItem {
+    width: 30%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .BidItem {
+    width: 47%;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .BidItem {
+    width: 100%;
+  }
+}
