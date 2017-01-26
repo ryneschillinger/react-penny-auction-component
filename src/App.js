@@ -11,9 +11,7 @@ class App extends Component {
     this.state = {
       items: []
     };
-
     setInterval(this.performAPIRequest.bind(this), 1000);
-
   }
 
   render() {
@@ -31,7 +29,6 @@ class App extends Component {
       url: 'http://pennyauctionserver.herokuapp.com/auctions', 
       data: { get_param: 'value' }, 
       success: function (data) { 
-        console.log(data)
         self.setState({ items: data });
       }
     });
